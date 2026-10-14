@@ -1,0 +1,123 @@
+h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    color: white;
+    line-height: 63px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+.grid {
+    --grid-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+}
+
+.card {
+    flex: 0 0 100%;
+    text-decoration: none;
+    color: #C3C3C3;
+}
+
+.card img,
+.card .fake-image {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card .fake-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#music-logo,
+#apple-logo {
+    height: 50%;
+    width: auto;
+}
+
+#wmuc-image {
+    height: 90%;
+    width: auto;
+    align-self: flex-end;
+}
+
+#wallet-image {
+    height: 85%;
+    width: auto;
+    align-self: flex-start;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.card h2 {
+    font-family: var(--neue-text-family);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    margin: 4px 0 0;
+}
+
+@media (min-width: 901px) and (max-width: 1250px) {
+    .grid {
+        --grid-gap: 30px;
+        row-gap: 20px;
+    }
+
+    .grid .card {
+        flex-basis: calc((100% - var(--grid-gap)) / 2);
+    }
+
+    .grid .card:nth-child(n+3) {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1251px) {
+    .grid {
+        row-gap: 0;
+    }
+
+    .grid .card {
+        flex-basis: calc((100% - 2 * var(--grid-gap)) / 3);
+    }
+
+    .grid .card:nth-child(n+4) {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding-top: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+
+    .card-meta {
+        margin-top: 6px;
+        font-size: 13px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+        margin: 2px 0 0;
+    }
+}

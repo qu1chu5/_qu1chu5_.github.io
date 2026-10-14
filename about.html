@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>About | Akash's Portfolio</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./portfolio-page.css">
+    <link rel='stylesheet' href='https://use.typekit.net/exv7kvq.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link
+        href='https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
+        rel='   stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="mono-font">WORK</a>
+        <a href="#" class="mono-font bold">ABOUT</a>
+    </div>
+    <div class="content">
+        <div class="three-fourths-col-until-mobile">
+            <p class="header-meta mono-font">A LITTLE ABOUT ME</p>
+            <h1>I’m a designer, engineer, and lifelong learner.</h1>
+        </div>
+        <div class="half-col-until-mobile header-plain-text">
+            <p>I studied Computer Science at the University of Maryland. I've been tinkering, designing, and coding
+                since 6th grade, when I first learned Python and Swift.<br><br>In my free time, you'll find me:</p>
+            <ul>
+                <li>Listening to music</li>
+                <li>Exploring someplace new</li>
+                <li>Flipping through my book & zine collection</li>
+            </ul>
+        </div>
+        <div class="grid section-vertical-margin">
+            <div class="three-fourths-col subheader-container">
+                <h3 class="mono-font">MUSIC</h3>
+                <p class="header">Some favorite albums</p>
+            </div>
+            <div id="album-gallery-image" class="three-fourths-col gallery-image">
+
+            </div>
+            <div id="album-gallery-text" class="quarter-col gallery-text">
+                <h4 class="mono-font">RELIABLE DATA ATTRIBUTES</h4>
+                <p>We ranked the data attributes that are most likely to be accurate and only used the ones we felt were
+                    integral to the user experience.</p>
+                <button id="album-gallery-prev-button" class="gallery-pagination-button">&lt;</button><button
+                    id="album-gallery-next-button" class="gallery-pagination-button">&gt;</button>
+            </div>
+        </div>
+        <div class="grid about-section section-vertical-margin">
+            <div class="three-fourths-col-until-mobile subheader-container">
+                <h3 class="mono-font">EXPLORING</h3>
+                <p class="header">A few memorable snapshots</p>
+            </div>
+            <div class="grid">
+                <div class="third-col">
+                    <img src="./assets/about_tokyo1.jpg">
+                </div>
+                <div class="third-col">
+                    <img src="./assets/about_dc.jpg">
+                </div>
+                <div class="third-col">
+                    <img src="./assets/about_kitty.jpg">
+                </div>
+            </div>
+            <div class="grid">
+                <div class="quarter-col">
+                    <img src="./assets/about_la.jpg">
+                </div>
+                <div class="quarter-col">
+                    <img src="./assets/about_snoopy.jpg">
+                </div>
+                <div class="half-col">
+                    <img src="./assets/about_me.jpg">
+                </div>
+            </div>
+            <div class="grid">
+                <div class="third-col">
+                    <img src="./assets/about_taka.jpg">
+                </div>
+                <div class="third-col">
+                    <img src="./assets/about_sf.jpg">
+                </div>
+                <div class="third-col">
+                    <img src="./assets/about_donki.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="grid section-vertical-margin">
+            <div class="three-fourths-col subheader-container">
+                <h3 class="mono-font">LITERARY COLLECTION</h3>
+                <p class="header">A few highlights</p>
+            </div>
+            <div id="zine-collection-image" class="full-width gallery-image">
+
+            </div>
+            <div id="zine-collection-text" class="one-fourth-col gallery-text">
+                <h4 class="mono-font">RELIABLE DATA ATTRIBUTES</h4>
+                <p>We ranked the data attributes that are most likely to be accurate and only used the ones we felt were
+                    integral to the user experience.</p>
+                <button id="zine-collection-prev-button" class="gallery-pagination-button">&lt;</button><button
+                    id="zine-collection-next-button" class="gallery-pagination-button">&gt;</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>MADE FROM SCRATCH WITH VANILLA HTML/CSS/JS. HAVING FUN @ <a href="https://www.realminizine.com"
+                target="_blank" rel="noopener noreferrer">REALMINIZINE.COM</a></p>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        initGallery(
+            "album-gallery-image",
+            "album-gallery-text",
+            "album-gallery-prev-button",
+            "album-gallery-next-button",
+            [
+                {
+                    imageSrc: "./assets/about_romantico.jpeg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "ROMANTICO - 800 CHERRIES",
+                    galleryTextBody: "<span class='italic'>romantico</span> is by far my favorite album of all-time. Its timeless themes feel all the more surreal against the duo's sudden disappearance in the early 2000s. <br><br>Favorite songs: <span class='italic'>painty paint pots</span>, <span class='italic'>bye-bye earth</span>, <span class='italic'>boo the blackberry</span>"
+                },
+                {
+                    imageSrc: "./assets/about_brat.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "BRAT - CHARLI XCX",
+                    galleryTextBody: "A reviewer once described this album's sound as \"filling,\" and I think that's a very apt description of Charli XCX's production style. This album's marketing and design strategy was interesting to observe.<br><br>Favorite songs: <span class='italic'>360</span>, <span class='italic'>B2b</span>"
+                },
+                {
+                    imageSrc: "./assets/about_beatopia.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "BEATOPIA - BEABADOOBEE",
+                    galleryTextBody: "The pop-rock production in this album is a pleasant contrast to Beabadoobee's sweeter, mellow voice. All the songs sound distinct despite their similar instrumentations. <br><br>Favorite songs: <span class='italic'>Tinkerbell is Overrated</span>, <span class='italic'>Talk</span>, <span class='italic'>The Perfect Pair</span>"
+                },
+                {
+                    imageSrc: "./assets/about_charm.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "CHARM - CLAIRO",
+                    galleryTextBody: "This is a really pleasant album and I like the 70s-inspired direction. The aesthetic is very well executed and her tour's stage set felt astonishingly on-theme.<br><br>Favorite songs: <span class='italic'>Second Nature</span>, <span class='italic'>Terrapin</span>, <span class='italic'>Slow Dance</span>, <span class='italic'>Echo</span>"
+                },
+                {
+                    imageSrc: "./assets/about_chokeenough.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "CHOKE ENOUGH - OKLOU",
+                    galleryTextBody: "I get that Oklou is French, but this album feels very Los Angeles to me. In my head I perceive the sound as dim, expansive, sprawling, low...the City of Los Angeles in an album.<br><br>Favorite songs: <span class='italic'>obvious</span>, <span class='italic'>harvest sky</span>, <span class='italic'>choke enough</span>, <span class='italic'>ict</span>"
+                },
+                {
+                    imageSrc: "./assets/about_summersover.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "SUMMER'S OVER - JORDANA/TV GIRL",
+                    galleryTextBody: "Jordana's vocal range is impressive and works well against TV Girl's production style. The songs bring out a strange melancholic optimism that I find weirdly enticing.<br><br>Favorite songs: <span class='italic'>Summer's Over</span>, <span class='italic'>Jump the Turnstile</span>, <span class='italic'>Ordinary Day</span>"
+                },
+                {
+                    imageSrc: "./assets/about_addison.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "ADDISON - ADDISON RAE",
+                    galleryTextBody: "Not sure I can explain this one. That being said, Addison Rae's presence in the internet zeigeist is fun.<br><br>Favorite songs: <span class='italic'>New York</span>, <span class='italic'>Aquamarine</span>, <span class='italic'>In The Rain</span>, <span class='italic'>High Fashion</span>"
+                }
+            ]
+        );
+
+        initGallery(
+            "zine-collection-image",
+            "zine-collection-text",
+            "zine-collection-prev-button",
+            "zine-collection-next-button",
+            [
+                {
+                    imageSrc: "./assets/about_popeye.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "POPEYE",
+                    galleryTextBody: "I collect a bunch of <span class='italic'>Popeye</span> magazines. I have one special English edition but most are in Japanese."
+                },
+                {
+                    imageSrc: "./assets/about_lastandards.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "LOS ANGELES STANDARDS (PHOTO SOURCE: FAIRFAX)",
+                    galleryTextBody: "Funky parking garages, dingbats, everything that makes L.A. unique."
+                },
+                {
+                    imageSrc: "./assets/about_openspaces.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "OPEN SPACES, ISSUE 002",
+                    galleryTextBody: "A publication about natural spaces with the massive, gorgeous photos."
+                },
+                {
+                    imageSrc: "./assets/about_emergenttokyo.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "EMERGENT TOKYO: DESIGNING THE SPONTANEOUS CITY",
+                    galleryTextBody: "A comprehensive, diagrammatic analysis of Tokyo's most effective and successful urban planning techniques."
+                },
+                {
+                    imageSrc: "./assets/about_catnip.jpg",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "CATNIP, ISSUE 1",
+                    galleryTextBody: "A magazine for cat lovers #cute"
+                }
+            ]
+        );
+    </script>
+</body>
+
+</html>

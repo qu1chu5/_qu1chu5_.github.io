@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>WMUC Radio | Akash's Portfolio</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./portfolio-page.css">
+    <link rel='stylesheet' href='https://use.typekit.net/exv7kvq.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link
+        href='https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
+        rel='   stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="mono-font">WORK</a>
+        <a href="about.html" class="mono-font">ABOUT</a>
+    </div>
+    <div class="content">
+        <div class="half-col-until-mobile">
+            <p class="header-meta mono-font">ONGOING • IN APP STORE REVIEW</p>
+            <h1>WMUC Radio</h1>
+        </div>
+        <div class="header-image">
+            <img src="./assets/wmuc_header1.jpg">
+            <img src="./assets/wmuc_header2.jpg">
+            <img src="./assets/wmuc_header3.jpg">
+        </div>
+        <div class="quarter-col-until-mobile header-details">
+            <h3 class="mono-font">ROLE</h3>
+            <p>iOS App Manager</p>
+        </div>
+        <div class="quarter-col-until-mobile header-details">
+            <h3 class="mono-font">TIMELINE</h3>
+            <p>Sept 2025 - Sept 2026</p>
+        </div>
+        <div class="quarter-col-until-mobile header-details">
+            <h3 class="mono-font">TEAM</h3>
+            <p>1 Assistant<br>2 Supervisors</p>
+        </div>
+        <div class="quarter-col-until-mobile header-details">
+            <h3 class="mono-font">SKILLS</h3>
+            <p>Figma<br>Xcode<br>Swift<br>UIKit/SwiftUI</p>
+        </div>
+        <div class="grid section-vertical-margin">
+            <div class="half-col background-column subheader-container">
+                <h3 class="mono-font">BACKGROUND</h3>
+                <p>WMUC is the University of Maryland’s official campus radio station. It maintains a significant
+                    physical presence on the university, has hosted notable artists (like Mitski) on its long-running
+                    flagship FM show, and has one of the largest physical libraries of any college radio station in
+                    America.</p>
+            </div>
+            <div class="half-col background-column">
+                <img src="./assets/wmuc-background.jpg" alt="WMUC Radio preview">
+            </div>
+        </div>
+        <div class="grid section-vertical-margin">
+            <div class="subheader-container three-fourths-col">
+                <h3 class="mono-font">PROBLEM</h3>
+                <p class="header">A new app prioritizing maintainability and longetivity</p>
+                <p>Users heavily relied on the station’s 2017 UIKit-based app to listen to radio shows. When the station
+                    modernized its API endpoints, we declared the old app unsalvageable after spending months wrangling
+                    with its messy code. How could we <span class="bold white-text">design and engineer an app to thrive
+                        for as long as possible</span> when I may not have a successor for years on end?</p>
+            </div>
+            <div class="plain-image three-fourths-col">
+                <img src="./assets/old_wmuc_1.jpg">
+                <img src="./assets/old_wmuc_2.jpg">
+            </div>
+            <div class="quarter-col image-caption">Pictured:<br />The original 2017 iOS app.</div>
+        </div>
+        <div class="section-vertical-margin grid numbered-grid-section">
+            <div class="subheader-container three-fourths-col">
+                <h3 class="mono-font">RESEARCH</h3>
+                <p class="header">Working around unusual constraints</p>
+                <p>The station is volunteer-run and only undergraduate students can be staff members. As a result, the
+                    new app has to overcome operational shortcomings that heavily impact the user experience.</p>
+            </div>
+            <div class="grid-item half-col">
+                <span class="mono-font">1</span>
+                <div>
+                    <h4>Low-accuracy data</h4>
+                    <p>The server isn’t informed of unexpected show cancellations, host substitutions, school closures, and holidays.</p>
+                </div>
+            </div>
+            <div class="grid-item half-col">
+                <span class="mono-font">2</span>
+                <div>
+                    <h4>Inconsistent show information</h4>
+                    <p>Show descriptions, cover photos, and host profile photos are optional and up to the hosts’ discretion to upload.</p>
+                </div>
+            </div>
+            <div class="grid-item half-col">
+                <span class="mono-font">3</span>
+                <div>
+                    <h4>Site & branding change frequently</h4>
+                    <p>The station’s branding and website have been overhauled multiple times since 2017...including social media.</p>
+                </div>
+            </div>
+            <div class="grid-item half-col">
+                <span class="mono-font">4</span>
+                <div>
+                    <h4>App might sit untouched for years</h4>
+                    <p>Nobody touched the 2017 app for five years. It’s possible and likely that the new app will face the same fate.</p>
+                </div>
+            </div>
+            <div class="grid-item full-width">
+                <span class="mono-font">5</span>
+                <div>
+                    <h4>Inexperienced successors</h4>
+                    <p>The UI should foster an intuitive codebase if my successor has little experience with Swift or engineering.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid section-vertical-margin">
+            <div class="subheader-container">
+                <h3 class="mono-font">APPROACH</h3>
+                <p class="header">Minimize confusion and rely only on what’s necessary</p>
+            </div>
+            <div id="approach-gallery" class="half-col gallery-image">
+
+            </div>
+            <div id="approach-gallery-text" class="half-col gallery-text">
+                <h4 class="mono-font">RELIABLE DATA ATTRIBUTES</h4>
+                <p>We ranked the data attributes that are most likely to be accurate and only used the ones we felt were integral to the user experience.</p>
+                <button id="approach-prev-button" class="gallery-pagination-button">&lt;</button><button id="approach-next-button" class="gallery-pagination-button">&gt;</button>
+            </div>
+        </div>
+
+        <div class="grid section-vertical-margin">
+            <div class="subheader-container">
+                <h3 class="mono-font">ENGINEERING SIMPLICITY</h3>
+                <p class="header">Intentionally designing for good code</p>
+                <p>Because I had proficiency in Swift, UIKit, and SwiftUI, we consciously designed to ensure the subsequent implementation would be simple, maintainable, and well-supported by Apple.</p>
+            </div>
+            <div id="engineering-gallery" class="full-width gallery-image">
+                <img src="./assets/apple_music_logo.svg" alt="">
+            </div>
+            <div id="engineering-gallery-text" class="three-fourths-col gallery-text">
+                <h4 class="mono-font">DATA PARSING LOGIC</h4>
+                <p>Data displayed to users uses minimal transformations from the API response, so the code can use single <span class="purple-text">JSONDecoder</span> line instead of extremely verbose key-value pair checks.</p>
+                <button id="engineering-prev-button" class="gallery-pagination-button">&lt;</button><button id="engineering-next-button" class="gallery-pagination-button">&gt;</button>
+            </div>
+        </div>
+        <div class="grid section-vertical-margin">
+            <div class="subheader-container">
+                <h3 class="mono-font">FINALLY...</h3>
+                <p class="header">Finishing the rest</p>
+            </div>
+            <div class="plain-image-contained-width full-width">
+                <img src="./assets/wmuc_finish_image.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>MADE FROM SCRATCH WITH VANILLA HTML/CSS/JS. HAVING FUN @ <a href="https://www.realminizine.com" target="_blank" rel="noopener noreferrer">REALMINIZINE.COM</a></p>
+    </div>
+    <script src="./scripts.js"></script>
+    <script>
+        initGallery(
+            "engineering-gallery",
+            "engineering-gallery-text",
+            "engineering-prev-button",
+            "engineering-next-button",
+            [
+                {
+                    imageSrc: "./assets/GROUP.png",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "DATA PARSING LOGIC",
+                    galleryTextBody: "Data displayed to users uses minimal transformations from the API response, so the code can use single <span class=\"purple-text code-snippet\">JSONDecoder</span> line instead of extremely verbose key-value pair checks."
+                },
+                {
+                    imageSrc: "./assets/wmuc_tab_view.mov",
+                    isVideo: true,
+                    isBottomAligned: false,
+                    galleryTextHeader: "<span class=\"purple-text\">TABVIEW</span> TO THE RESCUE",
+                    galleryTextBody: "The bottom playback bar uses a swipe mechanism that SwiftUI maintains, because manual gesture monitoring can conflict with the system or percolate strangely into subviews, requiring debugging."
+                },
+                {
+                    imageSrc: "./assets/wmuc_modifiers.webp",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "NATIVE STYLING",
+                    galleryTextBody: "Most of the style modifications in the Figma prototype were intentionally chosen to be native modifiers in SwiftUI, protecting the app from peculiarities if phone form factors change."
+                },
+                {
+                    imageSrc: "./assets/wmuc_layout.png",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "NATIVE LAYOUTS",
+                    galleryTextBody: "SwiftUI’s native layout support is minimal, but it’s simple and will be supported continuously. The interface relies on layout views like <span class=\"purple-text code-snippet\">GeometryReader</span> and <span class=\"purple-text code-snippet\">HStack</span> as much as possible."
+                }
+            ]
+        );
+
+        initGallery(
+            "approach-gallery",
+            "approach-gallery-text",
+            "approach-prev-button",
+            "approach-next-button",
+            [
+                {
+                    imageSrc: "./assets/wmuc_approach1.webp",
+                    isVideo: false,
+                    isBottomAligned: false,
+                    galleryTextHeader: "DESIGN FOR ENGINEERING SIMPLICITY",
+                    galleryTextBody: "Use systems that Apple has a history of maintaining consistently across iOS versions. <a href=\"#engineering-gallery\">More below</a>"
+                },
+                {
+                    imageSrc: "./assets/wmuc_approach2.png",
+                    isVideo: false,
+                    isBottomAligned: true,
+                    galleryTextHeader: "RELIABLE DATA ATTRIBUTES",
+                    galleryTextBody: "We ranked the data attributes that are most likely to be accurate and only used the ones we felt were integral to the user experience."
+                },
+                {
+                    imageSrc: "./assets/wmuc_approach3.webp",
+                    isVideo: false,
+                    isBottomAligned: true,
+                    galleryTextHeader: "COMMUNICATE UNCERTAINTY",
+                    galleryTextBody: "Use written language to suggest uncertainty when data has a potential likelihood of being inaccurate or misleading."
+                }
+            ]
+        );
+    </script>
+</body>
+
+</html>

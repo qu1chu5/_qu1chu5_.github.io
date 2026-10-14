@@ -1,0 +1,516 @@
+:root {
+    /* Vertical margins for rows that contain images/galleries */
+    --image-row-margin: 20px;
+}
+
+/* --------------------- Opening/Header --------------------- */
+h1 {
+    color: white;
+    font-size: 65px;
+    margin: 0px;
+    line-height: 65px;
+}
+
+.header-meta {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.header-meta a {
+    color: var(--light-gray);
+}
+
+.header-plain-text {
+    font-size: 24px;
+}
+
+.header-image,
+.header-image-small {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-image img {
+    flex: 0 0 auto;
+    height: 600px;
+    object-fit: contain;
+}
+
+.header-image-small img {
+    flex: 0 0 auto;
+    height: 500px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    object-fit: contain;
+}
+
+.header-details {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-details h3 {
+    margin: 3px 0;
+    font-size: 15px;
+}
+
+.header-details p {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* --------------------- Subheaders --------------------- */
+
+.subheader-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+}
+
+.subheader-container .header {
+    font-size: 40px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    line-height: 42px;
+}
+
+.subheader-container p:last-child {
+    margin-bottom: 0px;
+}
+
+.subheader-container h3 {
+    margin: 3px 0;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.subheader-container p {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0px;
+    line-height: 30px;
+}
+
+.quarter-col.image-caption {
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-right: 70px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.background-column {
+    /* margin-top: 90px;
+    margin-bottom: 90px; */
+}
+
+.section-vertical-margin {
+    margin-top: 90px;
+}
+
+/* --------------------- Background section --------------------- */
+
+.background-column:first-of-type {
+    padding-right: 30px;
+}
+
+.background-column:last-of-type {
+    padding-left: 30px;
+}
+
+.background-column img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* --------------------- (Un)Numbered grids --------------------- */
+
+.numbered-grid-section {
+    --numbered-grid-gap: 20px;
+    column-gap: var(--numbered-grid-gap);
+    row-gap: var(--numbered-grid-gap);
+}
+
+.numbered-grid-section .grid-item {
+    --grid-item-padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #373737;
+    padding: var(--grid-item-padding);
+    padding-bottom: calc(var(--grid-item-padding) + 4px);
+    column-gap: var(--grid-item-padding);
+}
+
+.numbered-grid-section .grid-item.half-col {
+    flex: 0 0 calc(50% - 0.5 * var(--numbered-grid-gap));
+}
+
+
+.numbered-grid-section .grid-item.full-width {
+    flex: 0 0 100%
+}
+
+/* Numbered column is optional, can be ommitted */
+.numbered-grid-section .grid-item>.mono-font {
+    flex: 0 0 auto;
+    line-height: 26.5px;
+    font-size: 18px;
+}
+
+/* The div contains the h4 and the p */
+.numbered-grid-section .grid-item>div {
+    flex: 1;
+}
+
+.numbered-grid-section .grid-item>div h4 {
+    margin: 0px 0px 2px;
+    /* Only bottom has margin */
+    font-family: var(--neue-text-family);
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.numbered-grid-section .grid-item>div p {
+    font-family: var(--neue-text-family);
+    font-weight: 400;
+    margin: 0px;
+    font-size: 19px;
+    width: 85%;
+}
+
+/* --------------------- Gallery --------------------- */
+.plain-image,
+.plain-image-contained-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    margin-top: var(--image-row-margin);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: var(--dark-gray);
+    overflow-x: hidden;
+}
+
+.plain-image img {
+    height: 400px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.plain-image.image-large img {
+    height: 600px;
+}
+
+.plain-image-contained-width img {
+    width: 80%;
+}
+
+.gallery-image,
+.gallery-image-bottom-aligned {
+    margin-top: var(--image-row-margin);
+    background-color: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-image,
+.gallery-image-width-fit {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.gallery-image-bottom-aligned {
+    padding-top: 60px;
+}
+
+.gallery-image img,
+.gallery-image-bottom-aligned img,
+.gallery-image video {
+    height: 450px;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.gallery-image img.width-fit {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery-text {
+    margin-top: 20px;
+}
+
+.gallery-image:not(.full-width)+.gallery-text,
+.gallery-image-bottom-aligned:not(.full-width)+.gallery-text {
+    margin-top: calc(var(--image-row-margin) + 20px);
+    padding-left: 40px;
+    max-width: 450px;
+}
+
+.gallery-text .mono-font {
+    font-size: 13px;
+    margin: 0px 0px 2px;
+    /* Only bottom has margin */
+}
+
+.gallery-text p {
+    font-size: 19px;
+    margin: 0px;
+    font-family: var(--neue-text-family);
+}
+
+.gallery-text a {
+    color: var(--light-gray);
+}
+
+.gallery-text p .code-snippet {
+    /* font-size: 19px; */
+    line-height: 19px;
+    font-weight: 300;
+    font-family: var(--mono-text-family), monospace;
+}
+
+.gallery-pagination-button,
+.gallery-pagination-button:focus,
+.gallery-pagination-button:active {
+    width: 40px;
+    height: 40px;
+    /* ⬇️ Hacky centering of text using padding instead of flexbox */
+    padding: 0px 0px 4px 0px;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0px;
+    background-color: #C3C3C3;
+    margin-top: 40px;
+    font-family: var(--mono-text-family);
+    color: var(--minizine-black);
+}
+
+.gallery-pagination-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.gallery-text .gallery-pagination-button:first-of-type {
+    margin-right: 10px;
+}
+
+/* --------------------- About Section --------------------- */
+.about-section .grid {
+    --about-grid-gap: 10px;
+    column-gap: var(--about-grid-gap);
+    margin-bottom: var(--about-grid-gap);
+}
+
+/* Each basis gives up its share of the gaps, so mixed rows (e.g. quarter + quarter + half) still add up to 100% */
+.about-section .grid .third-col {
+    flex-basis: calc((100% - 2 * var(--about-grid-gap)) / 3);
+}
+
+.about-section .grid .quarter-col {
+    height: 600px;
+    flex-basis: calc((100% - 3 * var(--about-grid-gap)) / 4);
+}
+
+.about-section .grid .half-col {
+    height: 600px;
+    flex-basis: calc((100% - var(--about-grid-gap)) / 2);
+}
+
+.about-section .grid img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 1251px) {
+    :root {
+        --image-row-margin: 0px;
+    }
+
+    /* Only the ones that aren't last should have margin-bottom */
+    .header-details:has(+ .header-details) {
+        margin-bottom: 20px;
+    }
+
+    .half-col,
+    .three-fourths-col,
+    .full-width {
+        flex-basis: 100%;
+    }
+
+    /* Hacky, but it'll do for now */
+    .gallery-image,
+    .plain-image {
+        margin: 0px !important;
+    }
+
+    .background-column {
+        padding-left: 0px !important;
+    }
+
+    .numbered-grid-section .grid-item.half-col {
+        flex: 0 0 100%;
+    }
+
+    .numbered-grid-section .grid-item>div p {
+        width: 93%;
+    }
+
+    /* Don't feel like listing out all applicable selectors. Come back if this gets really messy */
+    .image-caption:not(.full-width),
+    .gallery-text {
+        margin-top: 35px !important;
+    }
+
+    .image-caption,
+    .gallery-text {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    /* --------------------- General --------------------- */
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    /* --------------------- Joint --------------------- */
+    .subheader-container p:not(.header),
+    .header-plain-text {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    /* --------------------- Header --------------------- */
+    .header-image {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .header-image img {
+        height: 500px;
+    }
+
+    .header-image-small img {
+        height: 300px;
+    }
+
+    .header-image img:not(:nth-child(2)) {
+        display: none;
+    }
+
+    .header-meta {
+        font-size: 14px;
+    }
+
+    /* --------------------- Subheader --------------------- */
+    .subheader-container h3 {
+        margin-bottom: 2px;
+    }
+
+    .subheader-container .header {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .subheader-container .header+p:not(.header) {
+        margin-top: 8px;
+    }
+
+    /* --------------------- Gallery/Images --------------------- */
+    .plain-image img,
+    .gallery-image img,
+    .gallery-image-bottom-aligned img,
+    .gallery-image video {
+        height: 300px;
+    }
+
+    .image-caption {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    /* Overrides the !important margin from the 1251px block */
+    .image-caption:not(.full-width),
+    .gallery-text {
+        margin-top: 20px !important;
+    }
+
+    .plain-image img:not(:first-of-type) {
+        display: none;
+    }
+
+    .gallery-text p,
+    .gallery-text p .code-snippet {
+        font-size: 17px;
+    }
+
+    .gallery-text h4.mono-font {
+        font-size: 12px;
+    }
+
+    .gallery-text p .code-snippet {
+        line-height: 17px;
+    }
+
+    .gallery-pagination-button {
+        margin-top: 25px;
+        font-size: 16px;
+        padding-bottom: 3px;
+    }
+
+    /* --------------------- Numbered Grid --------------------- */
+    .numbered-grid-section .subheader-container {
+        margin-bottom: 0px;
+    }
+
+    .numbered-grid-section .grid-item>div p {
+        font-size: 17px;
+    }
+
+    .numbered-grid-section .grid-item>div h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .numbered-grid-section .grid-item>.mono-font {
+        font-size: 16px;
+        line-height: 24.5px;
+    }
+
+    /* --------------------- About Page --------------------- */
+    .about-section .grid {
+        column-gap: 0px;
+        margin-bottom: 0px;
+    }
+
+    .about-section .grid div {
+        flex-basis: 100% !important;
+        margin-bottom: 10px;
+    }
+}
