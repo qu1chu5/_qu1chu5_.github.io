@@ -74,8 +74,17 @@ a {
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px var(--horizontal-padding);
     border-bottom: 1px solid var(--dark-gray);
+}
+
+.navbar img {
+    display: block;
+    height: 25px;
+    width: auto;
 }
 
 .navbar a {
